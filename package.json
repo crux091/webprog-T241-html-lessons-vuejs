@@ -1,0 +1,9 @@
+{
+  "name": "webprog-t241-html-lessons-vuejs-root",
+  "private": true,
+  "scripts": {
+    "dev": "cd firstsfc && npm run dev",
+    "build": "cd firstsfc && npm ci && npm run build",
+    "start": "cd firstsfc && npm run preview"
+  }
+}
