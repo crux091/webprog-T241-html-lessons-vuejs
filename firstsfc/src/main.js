@@ -6,5 +6,5 @@ import FoodItem2 from './Components/FoodItem2.vue'
 
 const app = createApp(App)
 app.component('food-item', FoodItem)
-app.component('food-item-2', FoodItem2)
+app.component('food-item2', FoodItem2)
 app.mount('#app')
