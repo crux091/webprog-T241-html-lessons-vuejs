@@ -5,5 +5,8 @@
     "dev": "cd firstsfc && npm run dev",
     "build": "cd firstsfc && npm ci && npm run build",
     "start": "cd firstsfc && npm run preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.91.0"
   }
 }

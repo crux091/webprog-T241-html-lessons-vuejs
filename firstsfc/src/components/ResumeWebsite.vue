@@ -1,35 +1,33 @@
 <template>
-  <div class="resume-container">
-    <iframe 
-      src="/index.html"
-      title="Resume Website"
-      class="resume-iframe"
-    ></iframe>
+  <div>
+    <h2>Supabase Data</h2>
+    <div v-if="loading">Loading...</div>
+    <div v-else-if="error">Error: {{ error.message }}</div>
+    <pre v-else>{{ data }}</pre>
   </div>
 </template>
 
 <script>
+import { fetchProfiles } from '../api';
+
 export default {
   name: 'ResumeWebsite',
-  mounted() {
-    console.log('Resume Website loaded from /index.html');
+  data() {
+    return {
+      data: null,
+      error: null,
+      loading: true
+    };
+  },
+  async mounted() {
+    const { data, error } = await fetchProfiles();
+    this.data = data;
+    this.error = error;
+    this.loading = false;
   }
 }
 </script>
 
 <style scoped>
-.resume-container {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
 
-.resume-iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
-}
 </style>
