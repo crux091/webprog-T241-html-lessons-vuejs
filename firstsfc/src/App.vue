@@ -30,8 +30,7 @@ onMounted(() => {
         {{ instrument.id }} - {{ instrument.name }}
       </li>
     </ul>
-    <h3>Raw Data:</h3>
-    <pre>{{ rawData }}</pre>
+    <!-- raw data removed; only rendered list is shown -->
   </div>
 </template>
 <!-- End of file -->
