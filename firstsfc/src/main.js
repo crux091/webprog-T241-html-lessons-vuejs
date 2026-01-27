@@ -1,8 +1,10 @@
 import { createApp } from 'vue'
-
 import App from './App.vue'
-import ResumeWebsite from './components/ResumeWebsite.vue'
+import CommentForm from './components/CommentForm.vue'
+import Comment from './components/Comment.vue'
 
 const app = createApp(App)
-app.component('resume-website', ResumeWebsite)
+app.component('comment-form', CommentForm)
+app.component('comment', Comment)
+app.component('ResumeWebsite', website)
 app.mount('#app')
