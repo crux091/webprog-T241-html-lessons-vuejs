@@ -3,9 +3,11 @@ import App from './App.vue'
 import CommentForm from './components/CommentForm.vue'
 import Comment from './components/Comment.vue'
 import website from './components/ResumeWebsite.vue'
+import RestApi from './components/RestApi.vue'
 
 const app = createApp(App)
 app.component('comment-form', CommentForm)
 app.component('comment', Comment)
 app.component('ResumeWebsite', website)
+app.component('RestApi', RestApi)
 app.mount('#app')

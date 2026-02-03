@@ -3,8 +3,7 @@
   <website/>
   <comment-form/>
   <comment/>
-   
-
+  <RestApi/>
 </template>
 
 <script></script>
