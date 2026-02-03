@@ -1,6 +1,6 @@
 <template>
   <h1>Food</h1>
-  <website/>
+  <resume-website/>
   <comment-form/>
   <comment/>
   <RestApi/>
